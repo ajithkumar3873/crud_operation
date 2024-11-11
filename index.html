@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Operation</title>
+    
+
+    <!-- link css -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body onload="readAll()">
+
+    <div class="container">
+        <h1 class="title">Enter Your Details</h1>
+
+        <form class="contact-form" id="contactForm">
+            <!-- for creation -->
+
+             <!-- form for id -->
+            <!-- <div class="form-group">
+                <label for="contactId">ID</label>
+                <input type="text" id="contactId" placeholder="Enter ID" required />
+            </div> -->
+
+            <!-- form for name -->
+            <div class="form-group">
+                <label for="contactName">Name</label>
+                <input type="text" id="contactName" placeholder="Enter name" required/>
+              </div>
+
+              <!-- form for email -->
+              <div class="form-group">
+                <label for="contactEmail">Email</label>
+                <input type="email" id="contactEmail" placeholder="Example : johndoe@gmail.com" required/>
+              </div>
+
+              <!-- form for phone number -->
+
+              <div class="form-group">
+                <label for="contactNumber">Phone Number</label>
+                <input type="number"
+                  id="contactNumber" placeholder="Enter phone number" required/>
+              </div>
+                
+
+
+                <button type="submit" onclick="add()" class="btn-primary">Submit</button>   
+            </form>
+
+
+            <!-- for edit and delete details -->
+
+            <div class="contacts-container">
+                <h2 class="title">Entered Details</h2>
+                <!-- create an empty div to update details -->
+                <div id="contactsList" class="contacts-list"></div>
+            </div>
+
+            <!-- end of edit and delete -->
+
+             
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
